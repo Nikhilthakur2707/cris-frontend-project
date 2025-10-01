@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>User Data Portal</h2>
+
+  <form [formGroup]="dataForm" (ngSubmit)="onSubmit()" class="data-form">
+    <div class="form-group">
+      <label for="content">Enter New Data:</label>
+      <textarea id="content" formControlName="content" class="form-control" rows="3" placeholder="Write something..."></textarea>
+    </div>
+    <button type="submit" [disabled]="!dataForm.valid" class="btn btn-primary">Submit Data</button>
+  </form>
+
+  <hr>
+
+  <h3>All Submitted Data</h3>
+  <ul class="list-group">
+    <li *ngFor="let item of dataList" class="list-group-item">
+      <p><strong>Content:</strong> {{ item.content }}</p>
+      <small><strong>By User ID:</strong> {{ item.user.id }} | <strong>Username:</strong> {{ item.user.username }}</small>
+    </li>
+  </ul>
+  <div *ngIf="dataList.length === 0" class="alert alert-info">
+    No data found.
+  </div>
+</div>
