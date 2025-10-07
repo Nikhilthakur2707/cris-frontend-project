@@ -1,4 +1,4 @@
-<!-- <div class="container-fluid my-4">
+<!-- <!-- <div class="container-fluid my-4">
     <div class="d-flex justify-content-between align-items-center mb-3">
       <h2 class="text-center font-weight-bold flex-grow-1">Freight</h2>
       <span class="font-weight-bold">ANNEXURE A</span>
@@ -272,7 +272,7 @@
 
           <!-- Rake Holding - BOXN Row -->
           <tr formGroupName="rakeHoldingBoxn">
-            <td class="align-middle text-left font-weight-bold"><b>Rake Holding</b></td>
+            <td rowspan="4" class="align-middle text-left font-weight-bold"><b>Rake Holdings</b></td>
             <td class="text-left font-weight-bold"><b>BOXN</b></td>
             <td><input type="text" class="form-control form-control-sm" formControlName="target" placeholder="Target"></td>
             <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
@@ -282,10 +282,290 @@
             <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
             <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
           </tr>
+          <!-- Rake Holding - BCN Row -->
+          <tr formGroupName="rakeHoldingBcn">
+            <td class="text-left font-weight-bold"><b>BCN</b></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="target" placeholder="Target"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
+          </tr>
+          <!-- Rake Holding - BOBRN Row -->
+          <tr formGroupName="rakeHoldingBobrn">
+            <td class="text-left font-weight-bold"><b>BOBRN</b></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="target" placeholder="Target"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
+          </tr>
+
+          <!-- Rake Holding - Etc Row -->
+          <tr formGroupName="rakeHoldingEtc">
+            <td class="text-left font-weight-bold"><b>Etc.</b></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="target" placeholder="Target"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
+          </tr>
+
+          <!-- Avg reward release - BOXN Row -->
+          <tr formGroupName="avgRewardReleaseBoxn">
+            <td rowspan="3" class="align-middle text-left font-weight-bold"><b>Average reward release (in percentage terms)</b></td>
+            <td class="text-left font-weight-bold"><b>BOXN</b></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="target" placeholder="Target"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
+          </tr>
+          <!-- Avg reward release - BCN Row -->
+          <tr formGroupName="avgRewardReleaseBcn">
+            <td class="text-left font-weight-bold"><b>BCN</b></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="target" placeholder="Target"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
+          </tr>
+          <!-- Avg reward release - BOBRN Row -->
+          <tr formGroupName="avgRewardReleaseBobrn">
+            <td class="text-left font-weight-bold"><b>BOBRN</b></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="target" placeholder="Target"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
+          </tr>
+          
+          <!-- Outward Madeover-->
+          <tr formGroupName="OutwardMadeover">
+            <td rowspan="1" class="align-middle text-left font-weight-bold"><b>Outward Madeover</b></td>
+            <td class="text-left font-weight-bold"><b></b></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="target" placeholder="Target"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
+          </tr>
+          <!-- Empty converted into loading-->
+          <tr formGroupName="emptyConverted">
+            <td rowspan="1" class="align-middle text-left font-weight-bold"><b>Empty converted into loading + handover (in percentage)</b></td>
+            <td class="text-left font-weight-bold"><b></b></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="target" placeholder="Target"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
+          </tr>
+
+          <!-- Rake Loading - BOXN Row -->
+          <tr formGroupName="rakeLoadingBoxn">
+            <td rowspan="4" class="align-middle text-left font-weight-bold"><b>Rake Loading</b></td>
+            <td class="text-left font-weight-bold"><b>BOXN</b></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="target" placeholder="Target"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
+          </tr>
+          <!-- Rake Loading - BCN Row -->
+          <tr formGroupName="rakeLoadingBcn">
+            <td class="text-left font-weight-bold"><b>BCN</b></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="target" placeholder="Target"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
+          </tr>
+          <!-- Rake Loading - BOBRN Row -->
+          <tr formGroupName="rakeLoadingBobrn">
+            <td class="text-left font-weight-bold"><b>BOBRN</b></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="target" placeholder="Target"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
+          </tr>
+
+          <!-- Rake Loading - Steel Row -->
+          <tr formGroupName="rakeLoadingSteel">
+            <td class="text-left font-weight-bold"><b>STEEL</b></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="target" placeholder="Target"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
+          </tr>
+
+          <!-- Train Interchange - Made over -->
+          <tr formGroupName="trainInterchangeMadeOver">
+            <td rowspan="2" class="align-middle text-left font-weight-bold"><b>Train Interchange</b></td>
+            <td class="text-left font-weight-bold"><b>Made Over</b></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="target" placeholder="Target"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
+          </tr>
+
+          <!-- Train Interchange - taken over -->
+          <tr formGroupName="trainInterchangeTakenOver">
+            <td class="text-left font-weight-bold"><b>Taken Over</b></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="target" placeholder="Target"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
+          </tr>
+
+          <!-- Embedded Empty- BOXN Row -->
+          <tr formGroupName="embeddedEmptyBoxn">
+            <td rowspan="3" class="align-middle text-left font-weight-bold"><b>Embedded Empty (on Originating Basis)</b></td>
+            <td class="text-left font-weight-bold"><b>BOXN</b></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="target" placeholder="Target"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
+          </tr>
+          <!--Embedded Empty - BCN Row -->
+          <tr formGroupName="embeddedEmptyBcn">
+            <td class="text-left font-weight-bold"><b>BCN</b></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="target" placeholder="Target"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
+          </tr>
+          <!-- Embedded Empty - BOBRN Row -->
+          <tr formGroupName="embeddedEmptyBobrn">
+            <td class="text-left font-weight-bold"><b>BOBRN</b></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="target" placeholder="Target"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
+          </tr>
+
+          <!-- Short Loads- BOXN Row -->
+          <tr formGroupName="shortLoadsBoxn">
+            <td rowspan="3" class="align-middle text-left font-weight-bold"><b>Short Loads (on Originating Basis)</b></td>
+            <td class="text-left font-weight-bold"><b>BOXN</b></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="target" placeholder="Target"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
+          </tr>
+          <!--Short Loads - BCN Row -->
+          <tr formGroupName="shortLoadsBcn">
+            <td class="text-left font-weight-bold"><b>BCN</b></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="target" placeholder="Target"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
+          </tr>
+          <!-- Short Loads - BOBRN Row -->
+          <tr formGroupName="shortLoadsBobrn">
+            <td class="text-left font-weight-bold"><b>BOBRN</b></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="target" placeholder="Target"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
+          </tr>
+
+          <!-- Average Speed-->
+          <tr formGroupName="averageSpeed">
+            <td rowspan="1" colspan="2" class="align-middle text-left font-weight-bold"><b>Average Speed (including stabling and yard timing)</b></td>
+            <td class="text-left font-weight-bold"><b></b></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
+          </tr>
+
+          <!-- Wagon Holding-->
+          <tr formGroupName="wagonHolding">
+            <td rowspan="1" colspan="2" class="align-middle text-left font-weight-bold"><b>Wagon Holding</b></td>
+            <td class="text-left font-weight-bold"><b></b></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
+          </tr>
+
+          <!-- Wagon turnaround-->
+          <tr formGroupName="wagonTurnaround">
+            <td rowspan="1" colspan="2" class="align-middle text-left font-weight-bold"><b>Wagon Turnaround</b></td>
+            <td class="text-left font-weight-bold"><b></b></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="units" placeholder="Units"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="forMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthThisYear" placeholder="This Year" required></td>
+            <td><input type="number" class="form-control form-control-sm" formControlName="upToMonthLastYear" placeholder="Last Year"></td>
+            <td><input type="text" class="form-control form-control-sm" formControlName="percentVar" readonly></td>
+          </tr>
+             
         </tbody>
       </table>
     </div>
-
+    <!-- Remarks -->
+    <div style="margin-top: 20px; border: 1px solid #444; background-color: #f0f5e8; width: 100%; height: 130px; box-sizing: border-box; position: relative; padding: 10px 15px;">
+      <b>Remarks:</b>
+      <input type="text" 
+             style="border: none; outline: none; background: transparent; width: 90%; font-size: 18px; margin-left: 8px;"/>
+    </div>
+    
+    
     <!-- Form Actions -->
     <div class="d-flex justify-content-center mt-4">
       <button type="submit" class="btn btn-primary btn-lg mx-2" [disabled]="freightForm.invalid || isSubmitting">
